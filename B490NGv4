@@ -1,0 +1,324 @@
+clear
+b="\033[1m"
+u="\033[4m"
+bl="\033[30m"
+r="\033[31m"
+g="\033[32m"
+bu="\033[34m"
+m="\033[35m"
+c="\033[36m"
+w="\033[37m"
+endc="\033[0m"
+enda="\033[0m"
+blue="\033[1;34m"
+cyan="\033[1;36m"
+red="\033[1;31m"
+figlet -f slant "B490NG"|lolcat
+cowsay -f ghostbusters "SELAMAT DATANG DI TOOLS B490NG" | lolcat
+echo "Selamat datang di tools kami" |lolcat
+echo "Semoga Anda Bisa Meretas" |lolcat
+echo  "[+]===========================================[+]" |lolcat
+echo  "[+] Team     : B490NG $white                        [+] " |lolcat
+echo  "[+] PEMBUAT  : Mr.βoy $white                        [+] " |lolcat
+echo  "[+] Youtube  : Mr_βOY      $white                   [+] " |lolcat
+echo  "[+]===========================================[+]" |lolcat
+
+echo $r"•••••••••••••••••••••••••••••••••••••••••••••${endc}";
+echo   "         #####TOOLS B490NGv4! #####" |lolcat
+echo $r"•••••••••••••••••••••••••••••••••••••••••••••${endc}";
+
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo  $red"[#]> (Ctrl + C ) Detected,
+Trying To Exit ... "
+echo  $cyan"[#]> Subscribe channel Mr.βoy"
+sleep 1
+echo ""
+echo  $white"[#]> semoga bermanfaat :)"
+sleep 1
+exit
+}
+lagi=1
+while [ $lagi -lt 6 ];
+do
+sleep 1
+echo ""
+echo  "=========================================" |lolcat
+echo  $r"1.Naik Kereta Api                       [÷]${endc}";
+echo  $r "2. Lacak Lokasi IP                     [÷]${endc}";
+echo  $r "3. Membuat Script Deface               [÷]${endc}";
+echo  $r "4. Membuat Sistem Login Termux         [÷]${endc}";
+echo  $r "5. Munculin Button Kanan&Kiri          [÷]${endc}";
+echo  $r "6. SQLmap                              [÷]${endc}";
+echo  $r "7. Jadwal Sholat                       [÷]${endc}";
+echo  $r "8. Tools OSIF                          [÷]${endc}";
+echo  $w "9. Kalkulator                          [÷]${endc}";
+echo  $w "10. Bikin Virus [Vbug]                 [÷]${endc}";
+echo  $w "11. Fake Root Termux                   [÷]${endc}";
+echo  $w "12. hackboy                            [÷]${endc}";
+echo  $w "13. spamboy                            [÷]${endc}";
+echo  $w "14. defaceboy                          [÷]${endc}";
+echo  $w "15. Virtxt                             [÷]${endc}";
+echo  $w "00. Exit                               [÷]${endc}";
+echo  "=========================================" |lolcat
+echo ""
+echo  "╭─B490NG" |lolcat
+read -p "╰─#" pil;
+
+#Kereta
+
+case $pil in
+1) apt updat
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install sl
+sl
+
+;;
+
+#IPgeolocation
+
+2) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python2
+git clone https://github.com/maldevel/IPGeoLocation.git
+mv IPGeoLocation $HOME
+cd $HOME/IPGeoLocation
+chmod +x ipgeoLocation.py
+pip install -r requirements.txt
+echo  "cara menggunakannya ketik ini" |lolcat
+echo  "python2 ipgeoLocation.py -t IP Target" |lolcat
+echo  "contoh : python2 ipgeoLocation.py -t 192.168.3.0" |lolcat
+echo  "<========EXIT========>" |lolcat
+exit
+
+;;
+
+#BikinSCdeface
+
+3) echo  "NB :Jika Script nya sudah selesai dibuat,ketik" |lolcat
+echo "mv namaScript.html /sdcard/" |lolcat
+apt update
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python2
+git clone https://github.com/4L13199/LITESCRIPT
+mv LITESCRIPT $HOME
+cd $HOME/LITESCRIPT
+chmod +x LITESCRIPT.py
+python2 LITESCRIPT.py
+
+;;
+
+#SistemLogin
+
+4) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python2
+git clone https://github.com/Harisgitama/termux-loginv2fx.git
+mv termux-loginv2fx $HOME
+cd $HOME/termux-loginv2fx
+chmod +x setup.py
+python2 setup.py
+cd $HOME
+python2 useradd.py
+
+;;
+
+#Terkey
+
+5) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python
+git clone https://github.com/karjok/terkey
+mv terkey $HOME
+cd $HOME/terkey
+chmod 777 terkey.py
+python terkey.py
+
+;;
+
+#SqlMap
+
+6) apt update && apt upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python2
+git clone https://github.com/sqlmapproject/sqlmap
+mv sqlmap $HOME
+cd $HOME/sqlmap
+chmod +x sqlmap.py
+python2 sqlmap.py
+
+;;
+
+#Jadwal-Sholat
+
+7) pkg update && pkg upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git python mpv -y
+git clone https://github.com/karjok/sholat
+mv sholat $HOME
+cd $HOME/sholat
+pip install -r modul.txt
+python sholat.py
+
+;;
+
+#OSIF
+
+8) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+pkg install python2
+git clone https://github.com/ciku370/OSIF
+mv OSIF $HOME
+cd $HOME/OSIF
+pip2 install -r requirements.txt
+python2 osif.py
+
+;;
+
+#Kalkulator
+
+9) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+git clone https://github.com/MaulanaRyM/Kalkulathor
+mv Kalkulathor $HOME
+cd $HOME/Kalkulathor
+chmod +x ngitung.sh
+sh ngitung.sh
+
+;;
+
+#Virus Vbug
+
+10) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install python2 git -y
+git clone https://github.com/Junior60/vbug
+mv vbug $HOME
+cd $HOME/vbug
+chmod +x vbug.py
+python2 vbug.py
+
+;;
+
+#FakeRoot
+
+11) apt update
+clear
+figlet -f slant "B490NG"|lolcat
+apt install proot
+proot -0 -w ~ $PREFIX/bin/bash
+echo ""
+echo "Cara Cek, ketik : whoami" |lolcat
+
+;;
+
+#Hackboy
+
+12)pkg update && pkg upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+git clone https://github.com/Rayadinata765/hackboy
+mv hackboy $HOME
+cd $HOME/hackboy
+chmod +x hackboy.sh
+sh hackboy.sh
+
+;;
+
+#Spamboy
+
+13)pkg update && pkg upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+git clone https://github.com/Rayadinata765/spamboy
+mv spamboy $HOME
+cd $HOME/spamboy
+chmod +x spamboy.sh
+sh spamboy.sh
+
+;;
+
+#defaceboy
+
+14)pkg update && pkg upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+pkg install git
+git clone https://github.com/Rayadinata765/defaceboy
+mv defaceboy $HOME
+cd $HOME/defaceboy
+chmod +x deface.sh
+sh deface.sh
+
+;;
+
+#Virtxt 
+
+15)apt update && apt upgrade
+clear
+figlet -f slant "B490NG"|lolcat
+apt install git
+apt install curl
+apt install figlet
+apt install ruby
+gem install lolcat
+git clone https://github.com/muhammadfathul/VIRTEX
+cd VIRTEX
+sh virtex.sh
+
+;;
+
+#BAHAN BAHAN
+
+99)apt update && apt upgrade
+apt install python2
+pip2 install urllib3 chardet certifi idna requests
+pkg install git
+pip2 install mechanize
+pkg install curl
+pkg install ruby
+pkg install gem
+gem install lolcat
+pkg install git
+pkg install php
+pkg install ruby cowsay toilet figlet
+pkg install neofetch
+pkg install nano
+figlet -f slant " S U K S E S "|lolcat
+
+;;
+
+00) clear
+figlet -f slant "B490NG"|lolcat
+echo "Good by" |lolcat
+echo "Jangan Kapok Untuk Meretas" |lolcat
+exit
+
+;;
+
+*) echo  $g "WARNING!!!,
+Maaf teryata anda sangat nuub
+Tidak ada pilihan itu jancok dasar tolol
+mening hapus ajah akun main pow ajh!"
+esac
+done
+done
